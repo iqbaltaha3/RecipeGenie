@@ -34,7 +34,7 @@ def generate_response_flan_dynamic_enhanced(query, k=1, max_length=300, num_beam
     top_recipe = combined_recipes_df.iloc[top_index]['text']
     
     prompt = (
-        "You are an expert chef and recipe explainer. Below is a detailed recipe from our database:\n"
+        "Below is a detailed recipe from our database:\n"
         f"{top_recipe}\n\n"
         "The user requested a recipe based on the following ingredients and preferences:\n"
         f"{query}\n\n"
